@@ -1,7 +1,10 @@
-function Stats() {
+function Stats({ items }) {
+    const totalItems = items.length;
+    const packedItems = items.filter(item => item.packed).length;
+
     return (
         <footer className="stats">
-            <p>You have #3 items on your list, and you have packed #2 of them.</p>
+            <p>You have {totalItems} items on your list, and you have packed {packedItems} of them.</p>
         </footer>
     )
 }

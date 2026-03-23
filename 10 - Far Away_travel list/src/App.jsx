@@ -30,7 +30,7 @@ function App() {
       <Logo />
       <Form onAddItem={handleAddItem} />
       <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
-      <Stats />
+      <Stats items={items} />
     </div>
   )
 }
