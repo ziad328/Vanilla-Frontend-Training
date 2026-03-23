@@ -1,6 +1,5 @@
-function Stats({ items }) {
-    const totalItems = items.length;
-    const packedItems = items.filter(item => item.packed).length;
+function Stats({ totalItems, packedItems }) {
+
 
     return (
         <footer className="stats">

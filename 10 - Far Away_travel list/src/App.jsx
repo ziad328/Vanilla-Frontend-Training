@@ -6,6 +6,8 @@ import Stats from './components/Stats'
 
 function App() {
   const [items, setItems] = useState([])
+  const totalItems = items.length;
+  const packedItems = items.filter(item => item.packed).length;
 
   function handleAddItem(item) {
     setItems([...items, item])
@@ -30,7 +32,7 @@ function App() {
       <Logo />
       <Form onAddItem={handleAddItem} />
       <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
-      <Stats items={items} />
+      <Stats totalItems={totalItems} packedItems={packedItems} />
     </div>
   )
 }
