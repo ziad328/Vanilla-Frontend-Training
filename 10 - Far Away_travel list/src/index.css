@@ -13,7 +13,7 @@ html {
 body {
   font-size: 2.4rem;
   font-family: sans-serif;
-  color: #5a3e2b;
+  color: #083344; /* Deep Navy */
   font-family: "Quicksand";
   font-weight: 500;
 }
@@ -27,7 +27,7 @@ body {
 
 h1 {
   text-align: center;
-  background-color: #f4a226;
+  background-color: #67e8f9; /* Bright Ocean Water */
   font-family: "Monoton";
   font-size: 8rem;
   text-transform: uppercase;
@@ -38,7 +38,7 @@ h1 {
 }
 
 .add-form {
-  background-color: #e5771f;
+  background-color: #06b6d4; /* Deep Cyan */
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
@@ -52,9 +52,9 @@ h3 {
 }
 
 button,
-select{
-  background-color: #ffebb3;
-  color: #5a3e2b;
+select {
+  background-color: #f0fdfa; /* Minty White */
+  color: #083344;
   font-family: inherit;
   border: none;
   border-radius: 10rem;
@@ -65,8 +65,8 @@ select{
 }
 
 input {
-  background-color: #ffebb3;
-  color: #5a3e2b;
+  background-color: #f0fdfa; /* Minty White */
+  color: #083344;
   font-family: inherit;
   border: none;
   border-radius: 10rem;
@@ -77,14 +77,13 @@ input {
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #76c7ad;
+  background-color: #fcd34d; /* Sandy Yellow */
 }
 
 .list {
-  background-color: #5a3e2b;
-  color: #ffebb3;
+  background-color: #164e63; /* Deep Ocean Blue */
+  color: #cffafe; /* Light Cyan */
   padding: 4rem 0;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -105,7 +104,6 @@ input {
   list-style: none;
   width: 80%;
   overflow: auto;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
@@ -123,7 +121,7 @@ input {
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;
-  accent-color: #e5771f;
+  accent-color: #06b6d4; /* Deep Cyan */
 }
 
 .list li button {
@@ -136,7 +134,7 @@ input[type="checkbox"] {
 }
 
 .stats {
-  background-color: #76c7ad;
+  background-color: #fcd34d; /* Sandy Yellow */
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
