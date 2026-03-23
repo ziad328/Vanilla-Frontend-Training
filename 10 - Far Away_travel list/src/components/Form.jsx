@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Form() {
+function Form({ onAddItem }) {
     const [description, setDescription] = useState()
     const [quantity, setQuantity] = useState()
 
@@ -15,7 +15,7 @@ function Form() {
             packed: false,
             id: Date.now()
         }
-        console.log(newItem);
+        onAddItem(newItem)
 
         setDescription('')
         setQuantity('')
