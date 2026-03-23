@@ -8,6 +8,7 @@ function App() {
   const [items, setItems] = useState([])
   const totalItems = items.length;
   const packedItems = items.filter(item => item.packed).length;
+  const percentage = totalItems === 0 ? 0 : Math.round((packedItems / totalItems) * 100);
 
   function handleAddItem(item) {
     setItems([...items, item])
@@ -32,7 +33,7 @@ function App() {
       <Logo />
       <Form onAddItem={handleAddItem} />
       <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} />
-      <Stats totalItems={totalItems} packedItems={packedItems} />
+      <Stats totalItems={totalItems} packedItems={packedItems} percentage={percentage} />
     </div>
   )
 }
