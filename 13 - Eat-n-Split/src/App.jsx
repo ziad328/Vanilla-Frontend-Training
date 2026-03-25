@@ -1,8 +1,12 @@
-import React from 'react'
+import FriendList from "./components/FriendList"
 
 function App() {
   return (
-    <div>App</div>
+    <div className="app">
+      <div className="sidebar">
+        <FriendList />
+      </div>
+    </div>
   )
 }
 
