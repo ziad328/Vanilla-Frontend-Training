@@ -1,13 +1,39 @@
 import AccordionItem from "./AccordionItem"
+import { useState } from "react";
 
 function Accordion({ data }) {
+    const [curOpen, setCurOpen] = useState(null);
+
     return (
         <div className="accordion">
-            {data.map((item, index) => (
-                <AccordionItem key={index} num={index} title={item.title} text={item.text} />
+            {data.map((el, i) => (
+                <AccordionItem
+                    curOpen={curOpen}
+                    onOpen={setCurOpen}
+                    title={el.title}
+                    num={i}
+                    key={el.title}
+                >
+                    {el.text}
+                </AccordionItem>
             ))}
+
+            <AccordionItem
+                curOpen={curOpen}
+                onOpen={setCurOpen}
+                title="Test 1"
+                num={5}
+                key="test 1"
+            >
+                <p>Allows React developers to:</p>
+                <ul>
+                    <li>Break up UI into components</li>
+                    <li>Make components reusuable</li>
+                    <li>Place state efficiently</li>
+                </ul>
+            </AccordionItem>
         </div>
-    )
+    );
 }
 
 export default Accordion
