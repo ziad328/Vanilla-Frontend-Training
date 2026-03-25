@@ -1,12 +1,12 @@
 import Friend from "./Friend"
 
-function FriendList({ friends, onSelectFriend }) {
+function FriendList({ friends, onSelectFriend, selectedFriend }) {
 
 
     return (
         <ul>
             {friends.map(friend => (
-                <Friend key={friend.id} friend={friend} onSelectFriend={onSelectFriend} />
+                <Friend key={friend.id} friend={friend} selectedFriend={selectedFriend} onSelectFriend={onSelectFriend} />
             ))}
         </ul>
     )
