@@ -44,7 +44,7 @@ function App() {
           {showAddFriend ? "Close" : "Add Friend"}
         </Button>
       </div>
-      {/* <FormSplitBill /> */}
+      <FormSplitBill />
     </div>
   )
 }
